@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+    background-color: #f4f7f6;
+    color: #333;
+}
+
+/* Меню у шапці (Flexbox) */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+}
+
+.nav a:hover,
+.nav a.active {
+    text-decoration: underline;
+    color: #004499;
+}
+
+/* Головний блок (Flexbox) */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ffcc00;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.hero-image {
+    border: 2px dashed #ccc;
+    padding: 40px;
+    border-radius: 8px;
+    color: #777;
+}
+
+/* Три картки переваг (Flexbox) */
+.features-container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    background: #ffffff;
+    padding: 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+}
+
+/* Сторінка Про мене */
+.about-content {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.about-content h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
+    font-size: 14px;
+}
+
+/* Адаптивність для мобільних пристроїв (@media) */
+@media (max-width: 768px) {
+    .hero, .features-container {
+        flex-direction: column;
+    }
+    .hero-text {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
